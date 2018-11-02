@@ -71,6 +71,7 @@
 - Tweak a11y label aggregation behavior to enable container label overrides [Michael Schneider](https://github.com/maicki)[#1199] (https://github.com/TextureGroup/Texture/pull/1199)
 - Fix logic cleaning data if delegate / dataSource changes and bring over logic to ASTableView [Michael Schneider](https://github.com/maicki)[#1200] (https://github.com/TextureGroup/Texture/pull/1200)
 - Standardize the code base on Objective-C++. We will still not leak any C++ into public headers, however. [Adlai Holler](https://github.com/Adlai-Holler)
+- *Small Breaking Change* Improve ASTraitCollection availability annotations and removed public factory methods. If you use them, which you really aren't intended to, then migrate to `+traitCollectionWithASPrimitiveTraitCollection:`. Good news: This fixes a ton of unguarded availability warnings! [Adlai Holler](https://github.com/Adlai-Holler)
 
 ## 2.7
 - Fix pager node for interface coalescing. [Max Wang](https://github.com/wsdwsd0829) [#877](https://github.com/TextureGroup/Texture/pull/877)
