@@ -4,8 +4,8 @@ platform :ios, '9.0'
 
 target :'AsyncDisplayKitTests' do
   pod 'OCMock', '=3.4.1' # 3.4.2 currently has issues.
-  pod 'FBSnapshotTestCase/Core', '~> 2.1'
-  pod 'JGMethodSwizzler', :git => 'https://github.com/JonasGessner/JGMethodSwizzler', :branch => 'master'
+  pod 'FBSnapshotTestCase/Core', :git=> 'https://github.com/facebookarchive/ios-snapshot-test-case.git', :branch => 'master'
+  pod 'JGMethodSwizzler', :git => 'https://github.com/farktronix/JGMethodSwizzler.git', :branch => 'master'
 
   # Only for buck build
   pod 'PINRemoteImage', '3.0.0-beta.14'
